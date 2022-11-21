@@ -21,6 +21,7 @@ h1 {
   text-align: center;
   border: 3px solid black;
   width: 100%;
+  font-size: 4rem;
 }
 h2 {
   text-align: center;
@@ -75,7 +76,7 @@ footer {
   position: fixed;
   bottom: 0px;
   left: 0px;
-  background-color: white;
+  background-color: lightgray;
   width: 100%;
   border: 3px solid black;
 }
@@ -92,8 +93,8 @@ footer a img {
 }
 
 .profile-picture {
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
   border-radius: 500%;
   border: 2px solid black;
   grid-area: pp;
@@ -112,31 +113,40 @@ footer a img {
   grid-area: pn;
   padding: auto;
   margin: auto;
+  font-size: 3rem;
 }
 .aboutMe {
   grid-area: am;
   border: 3px solid black;
+  width: 50%;
+  margin: 20px 20px;
+  padding: 20px;
 }
 .counterAsked {
   grid-area: ca;
   border: 3px solid black;
   width: 50%;
-  margin: auto;
   background-color: white;
   border-radius: 10%;
+  margin: 40px auto;
+  padding: 20px;
 }
 .bookmarked {
   grid-area: bm;
   border: 3px solid black;
   width: 50%;
-  margin: auto;
   background-color: white;
   border-radius: 10%;
+  margin: 40px auto;
+  padding: 20px;
 }
 .settings {
   grid-area: s;
-  margin-top: 5%;
+  margin-top: 30px;
+  font-size: 2rem;
 }
 .darkMode {
   grid-area: dm;
+  margin-bottom: 100px;
+  font-size: 2rem;
 }
