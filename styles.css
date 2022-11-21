@@ -31,18 +31,19 @@ h1 {
 .card {
   height: fit-content;
   width: auto;
+  max-width: 500px;
   border: 2px solid black;
   position: relative;
   text-align: center;
   background-color: rgba(255, 255, 252, 0.666);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 40px auto;
+  border-radius: 5%;
+  padding: 24px;
+  margin: 20px auto;
   box-shadow: 5px 5px black;
 }
 .card svg {
-  height: 25px;
   width: 25px;
+  height: 25px;
 }
 .card p {
   font-size: 1.5rem;
@@ -70,8 +71,12 @@ h1 {
   background-color: lightgrey;
 }
 .showAnswer {
-  height: 50px;
-  width: auto;
+  padding: 12px;
+  border-radius: 10%;
+  border: 3px solid black;
+}
+.showAnswer:hover {
+  background-color: lightgray;
 }
 footer {
   height: 60px;
