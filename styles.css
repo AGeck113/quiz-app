@@ -66,3 +66,53 @@ footer nav {
 footer a img {
   height: 50px;
 }
+
+.profile-picture {
+  height: 200px;
+  width: 200px;
+  border-radius: 500%;
+  border: 2px solid black;
+  grid-area: pp;
+}
+.profilePage {
+  display: grid;
+  text-align: center;
+  grid-template-areas:
+    "pp pn"
+    "am am"
+    "ca bm"
+    "s ."
+    "dm .";
+}
+.profileName {
+  grid-area: pn;
+  padding: auto;
+  margin: auto;
+}
+.aboutMe {
+  grid-area: am;
+  border: 3px solid black;
+}
+.counterAsked {
+  grid-area: ca;
+  border: 3px solid black;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10%;
+}
+.bookmarked {
+  grid-area: bm;
+  border: 3px solid black;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10%;
+}
+.settings {
+  grid-area: s;
+  margin-top: 5%;
+}
+.darkMode {
+  grid-area: dm;
+}
