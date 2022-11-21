@@ -100,61 +100,55 @@ footer a img {
   height: 50px;
 }
 
+.profile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  opacity: 80%;
+}
 .profile-picture {
   height: auto;
   width: auto;
   max-height: 300px;
-  border-radius: 500%;
+  border-radius: 15px;
   border: 2px solid black;
-  grid-area: pp;
-}
-.profilePage {
-  display: grid;
-  text-align: center;
-  background-color: rgba(255, 255, 252, 0.666);
-  grid-template-areas:
-    "pp pn"
-    "am am"
-    "ca bm"
-    "s ."
-    "dm .";
+  margin: 15px auto;
 }
 .profileName {
-  grid-area: pn;
-  padding: auto;
+  padding: 10px;
   margin: auto;
+  text-align: center;
   font-size: 3rem;
   background-color: lightgray;
 }
 .aboutMe {
-  grid-area: am;
   border: 3px solid black;
-  width: 80%;
+  width: 90%;
   margin: 40px auto;
   padding: 20px;
   background-color: lightgray;
 }
 .counterAsked {
-  grid-area: ca;
   border: 3px solid black;
-  width: 50%;
+  width: 40%;
+  max-width: 200px;
   background-color: white;
   border-radius: 10%;
   margin: 40px auto;
   padding: 20px;
 }
 .bookmarked {
-  grid-area: bm;
   border: 3px solid black;
-  width: 50%;
+  width: 40%;
+  max-width: 200px;
   background-color: white;
   border-radius: 10%;
   margin: 40px auto;
   padding: 20px;
 }
 .settings {
-  grid-area: s;
-  margin: 30px auto;
+  margin: 40px auto 100px auto;
   font-size: 2rem;
   background-color: lightgray;
   width: fit-content;
@@ -163,8 +157,7 @@ footer a img {
   border-radius: 10%;
 }
 .darkMode {
-  grid-area: dm;
-  margin: 40px auto 70px auto;
+  margin: 40px auto 100px auto;
   font-size: 2rem;
   width: fit-content;
   border: 3px solid black;
