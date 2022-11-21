@@ -9,10 +9,15 @@ h1 {
 }
 .card {
   height: fit-content;
-  width: fit-content;
+  width: 400px;
   border: 2px solid black;
   position: relative;
   text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 5px 5px black;
 }
 .card p {
   font-size: 1.5rem;
@@ -21,12 +26,18 @@ h1 {
   height: 40px;
   width: auto;
   position: absolute;
-  top: -10px;
-  right: 10px;
+  top: -20px;
+  right: 0px;
 }
 
 .card ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+}
+.card ul li {
+  border: 2px solid black;
+  border-radius: 20%;
+  padding: 10px;
+  background-color: lightgrey;
 }
