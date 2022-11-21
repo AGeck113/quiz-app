@@ -14,7 +14,7 @@
 }
 body {
   background-color: rgb(250, 185, 88);
-  font-family: "Happy Monkey";
+  font-family: "Happy Monkey", Arial, Helvetica, sans-serif;
 }
 
 h1 {
