@@ -1,8 +1,20 @@
+/* happy-monkey-regular - latin */
+@font-face {
+  font-family: "Happy Monkey";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./assets/happy-monkey-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/happy-monkey-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: lightgrey;
+  background-color: rgb(250, 185, 88);
+  font-family: "Happy Monkey";
 }
 h1 {
   text-align: center;
@@ -18,23 +30,25 @@ h2 {
   border: 2px solid black;
   position: relative;
   text-align: center;
-  background-color: white;
+  background-color: rgba(255, 255, 252, 0.666);
   border-radius: 10px;
   padding: 20px;
-  margin: auto;
+  margin: 20px;
   box-shadow: 5px 5px black;
 }
 .card p {
   font-size: 1.5rem;
 }
-.card img {
+.card .bookmark-button {
   height: 40px;
   width: auto;
   position: absolute;
   top: -20px;
   right: 0px;
 }
-
+.active {
+  color: red;
+}
 .card ul {
   list-style: none;
   display: flex;
