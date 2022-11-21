@@ -27,9 +27,7 @@ h1 {
   font-size: 4rem;
   background-color: lightgray;
 }
-h2 {
-  text-align: center;
-}
+
 .card {
   height: fit-content;
   width: 400px;
@@ -98,8 +96,9 @@ footer a img {
 }
 
 .profile-picture {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
+  max-height: 300px;
   border-radius: 500%;
   border: 2px solid black;
   grid-area: pp;
@@ -107,6 +106,7 @@ footer a img {
 .profilePage {
   display: grid;
   text-align: center;
+  background-color: rgba(255, 255, 252, 0.666);
   grid-template-areas:
     "pp pn"
     "am am"
