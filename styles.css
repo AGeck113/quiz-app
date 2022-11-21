@@ -13,9 +13,11 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(250, 185, 88);
+  background-color: white;
   font-family: "Happy Monkey", Arial, Helvetica, sans-serif;
   background-image: url("./assets/McLaren_Eau_Rouge_Spa_2008.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -117,6 +119,7 @@ footer a img {
   padding: auto;
   margin: auto;
   font-size: 3rem;
+  background-color: lightgray;
 }
 .aboutMe {
   grid-area: am;
@@ -124,6 +127,7 @@ footer a img {
   width: 80%;
   margin: 40px auto;
   padding: 20px;
+  background-color: lightgray;
 }
 .counterAsked {
   grid-area: ca;
@@ -145,11 +149,21 @@ footer a img {
 }
 .settings {
   grid-area: s;
-  margin-top: 30px;
+  margin: 30px auto;
   font-size: 2rem;
+  background-color: lightgray;
+  width: fit-content;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 10%;
 }
 .darkMode {
   grid-area: dm;
-  margin-bottom: 100px;
+  margin: 40px auto 70px auto;
   font-size: 2rem;
+  width: fit-content;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 10%;
+  background-color: lightgray;
 }
