@@ -30,7 +30,7 @@ h1 {
 
 .card {
   height: fit-content;
-  width: 400px;
+  width: auto;
   border: 2px solid black;
   position: relative;
   text-align: center;
