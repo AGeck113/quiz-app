@@ -49,6 +49,7 @@ h2 {
 .active {
   color: red;
 }
+
 .card ul {
   list-style: none;
   display: flex;
@@ -59,6 +60,10 @@ h2 {
   border-radius: 20%;
   padding: 10px;
   background-color: lightgrey;
+}
+.showAnswer {
+  height: 50px;
+  width: auto;
 }
 footer {
   height: 60px;
