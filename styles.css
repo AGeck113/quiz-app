@@ -16,6 +16,7 @@ body {
   background-color: rgb(250, 185, 88);
   font-family: "Happy Monkey";
 }
+
 h1 {
   text-align: center;
   border: 3px solid black;
@@ -33,7 +34,7 @@ h2 {
   background-color: rgba(255, 255, 252, 0.666);
   border-radius: 10px;
   padding: 20px;
-  margin: 20px;
+  margin: 40px auto;
   box-shadow: 5px 5px black;
 }
 .card p {
