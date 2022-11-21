@@ -54,7 +54,7 @@ footer nav {
   display: flex;
   justify-content: space-evenly;
 }
-.homeIcon {
+.activeTab {
   border: 3px solid black;
   border-radius: 50%;
 }
