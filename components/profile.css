@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: lightgray;
-  opacity: 80%;
+  background-color: var(--content-background);
 }
 .profile_profile-picture {
   height: auto;
@@ -18,14 +17,14 @@
   margin: auto;
   text-align: center;
   font-size: 3rem;
-  background-color: lightgray;
+  background-color: var(--content-background);
 }
 .profile_about-me {
   border: 3px solid black;
   width: 90%;
   margin: 40px auto;
   padding: 20px;
-  background-color: lightgray;
+  background-color: var(--content-background);
 }
 
 .profile_counter-asked {
@@ -49,7 +48,7 @@
 .profile_settings {
   margin: 40px auto 100px auto;
   font-size: 2rem;
-  background-color: lightgray;
+  background-color: var(--content-background);
   width: fit-content;
   border: 3px solid black;
   padding: 10px;
@@ -62,5 +61,5 @@
   border: 3px solid black;
   padding: 10px;
   border-radius: 10%;
-  background-color: lightgray;
+  background-color: var(--content-background);
 }

@@ -5,7 +5,7 @@
   border: 2px solid black;
   position: relative;
   text-align: center;
-  background-color: rgba(255, 255, 252, 0.666);
+  background-color: var(--content-background);
   border-radius: 5%;
   padding: 24px;
   margin: 20px auto;
@@ -40,7 +40,7 @@
   border: 2px solid black;
   border-radius: 20%;
   padding: 10px;
-  background-color: lightgrey;
+  background-color: var(--tag-background);
 }
 .question-card__show-answer-button {
   padding: 12px;
@@ -48,5 +48,5 @@
   border: 3px solid black;
 }
 .question-card__show-answer-button:hover {
-  background-color: lightgray;
+  background-color: var(--tag-background);
 }
