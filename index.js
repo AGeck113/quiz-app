@@ -1,9 +1,6 @@
 console.clear();
 
-const bodyElement = document.querySelector('[data-js="body"]');
-console.log(bodyElement);
-
-const toggleButton = document.querySelector('[data-js="toggleDarkMode"');
-toggleButton.addEventListener("click", () => {
-  bodyElement.classList.toggle("dark");
+const buttonCard1 = document.querySelector('[data-js="buttonc1"]');
+buttonCard1.addEventListener("click", () => {
+  buttonCard1.classList.toggle("active");
 });
