@@ -13,8 +13,11 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <article class="card">
-        <button class="bookmark-button active" aria-label="bookmark">
+      <article class="question-card">
+        <button
+          class="question-card__bookmark-button active"
+          aria-label="bookmark"
+        >
           <svg viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -22,17 +25,22 @@
             />
           </svg>
         </button>
-        <p>What driver ended his F1 career in 2022?</p>
-        <button class="showAnswer">Show Answer</button>
+        <p class="question-card__question">
+          What driver ended his F1 career in 2022?
+        </p>
+        <button class="question-card__show-answer-button">Show Answer</button>
 
-        <ul class="categorieTags">
+        <ul class="question-card__categorie-tags">
           <li>#F1</li>
           <li>#Racing</li>
           <li>#DankeSeb</li>
         </ul>
       </article>
-      <article class="card">
-        <button class="bookmark-button active" aria-label="bookmark">
+      <article class="question-card">
+        <button
+          class="question-card__bookmark-button active"
+          aria-label="bookmark"
+        >
           <svg viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -40,10 +48,12 @@
             />
           </svg>
         </button>
-        <p>Who is the 2022 F1 World-Champion?</p>
+        <p class="question-card__question">
+          Who is the 2022 F1 World-Champion?
+        </p>
         <button class="showAnswer">Show Answer</button>
 
-        <ul class="categorieTags">
+        <ul class="question-card__categorie-tags">
           <li>#F1</li>
           <li>#Racing</li>
           <li>#Champion</li>
@@ -55,7 +65,7 @@
         <a href="index.html">
           <img src="./assets/kindpng_822718.png" alt="navigate to questions"
         /></a>
-        <a href="./bookmarks.html" class="activeTab"
+        <a href="./bookmarks.html" class="navbar__active-tab"
           ><img
             src="./assets/P54wi8dBuiTavN8-Bookmark-PNG-File.png"
             alt="bookmarks"

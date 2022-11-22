@@ -32,7 +32,7 @@ h1 {
   background-color: lightgray;
 }
 
-.card {
+.question-card {
   height: fit-content;
   width: auto;
   max-width: 500px;
@@ -45,14 +45,14 @@ h1 {
   margin: 20px auto;
   box-shadow: 5px 5px black;
 }
-.card svg {
+.question-card svg {
   width: 40px;
   height: 40px;
 }
-.card p {
+.question-card__question {
   font-size: 1.5rem;
 }
-.card .bookmark-button {
+.question-card__bookmark-button {
   height: 80px;
   width: auto;
   position: absolute;
@@ -65,23 +65,23 @@ h1 {
   color: red;
 }
 
-.card ul {
+.question-card__categorie-tags {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
 }
-.card ul li {
+.question-card__categorie-tags li {
   border: 2px solid black;
   border-radius: 20%;
   padding: 10px;
   background-color: lightgrey;
 }
-.showAnswer {
+.question-card__show-answer-button {
   padding: 12px;
   border-radius: 10%;
   border: 3px solid black;
 }
-.showAnswer:hover {
+.question-card__show-answer-button:hover {
   background-color: lightgray;
 }
 footer {
@@ -94,15 +94,15 @@ footer {
   border-top: 3px solid black;
   padding: 5px;
 }
-footer nav {
+.navbar {
   display: flex;
   justify-content: space-evenly;
 }
-.activeTab {
+.navbar__active-tab {
   border: 3px solid black;
   border-radius: 30%;
 }
-footer a img {
+.navbar img {
   height: 50px;
 }
 
@@ -113,7 +113,7 @@ footer a img {
   background-color: lightgray;
   opacity: 80%;
 }
-.profile-picture {
+.profile_profile-picture {
   height: auto;
   width: auto;
   max-height: 300px;
@@ -121,21 +121,21 @@ footer a img {
   border: 2px solid black;
   margin: 15px auto;
 }
-.profileName {
+.profile_profile-name {
   padding: 10px;
   margin: auto;
   text-align: center;
   font-size: 3rem;
   background-color: lightgray;
 }
-.aboutMe {
+.profile_about-me {
   border: 3px solid black;
   width: 90%;
   margin: 40px auto;
   padding: 20px;
   background-color: lightgray;
 }
-.counterAsked {
+.profile_counter-asked {
   border: 3px solid black;
   width: 40%;
   max-width: 200px;
@@ -144,7 +144,7 @@ footer a img {
   margin: 40px auto;
   padding: 20px;
 }
-.bookmarked {
+.profile_bookmarked {
   border: 3px solid black;
   width: 40%;
   max-width: 200px;
@@ -153,7 +153,7 @@ footer a img {
   margin: 40px auto;
   padding: 20px;
 }
-.settings {
+.profile_settings {
   margin: 40px auto 100px auto;
   font-size: 2rem;
   background-color: lightgray;
@@ -162,7 +162,7 @@ footer a img {
   padding: 10px;
   border-radius: 10%;
 }
-.darkMode {
+.profile_dark-mode {
   margin: 40px auto 100px auto;
   font-size: 2rem;
   width: fit-content;
