@@ -42,18 +42,20 @@ h1 {
   box-shadow: 5px 5px black;
 }
 .card svg {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
 }
 .card p {
   font-size: 1.5rem;
 }
 .card .bookmark-button {
-  height: 40px;
+  height: 80px;
   width: auto;
   position: absolute;
   top: -20px;
   right: 0px;
+  background: transparent;
+  border: none;
 }
 .active {
   color: red;
