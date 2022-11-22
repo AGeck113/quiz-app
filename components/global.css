@@ -1,0 +1,33 @@
+/* happy-monkey-regular - latin */
+@font-face {
+  font-family: "Happy Monkey";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../assets/happy-monkey-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/happy-monkey-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: "Happy Monkey", Arial, Helvetica, sans-serif;
+  background-image: url("../assets/McLaren_Eau_Rouge_Spa_2008.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dark {
+  background-image: none;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  border: 3px solid black;
+  width: 100%;
+  font-size: 4rem;
+  background-color: lightgray;
+}
