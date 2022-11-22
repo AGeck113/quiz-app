@@ -13,9 +13,10 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <article class="card">
+      <!-- first card -->
+      <article class="question-card">
         <button
-          class="bookmark-button"
+          class="question-card__bookmark-button"
           data-js="btnCard1"
           aria-label="bookmark"
         >
@@ -26,17 +27,18 @@
             />
           </svg>
         </button>
-        <p>What driver ended his F1 career in 2022?</p>
-        <button class="showAnswer">Show Answer</button>
+        <p class="question-card__question">What driver ended his F1 career in 2022?</p>
+        <button class="question-card__show-answer-button">Show Answer</button>
 
-        <ul class="categorieTags">
+        <ul class="question-card__categorie-tags">
           <li>#F1</li>
           <li>#Racing</li>
           <li>#DankeSeb</li>
         </ul>
       </article>
-      <article class="card">
-        <button class="bookmark-button active" aria-label="bookmark">
+      <!--second card-->
+      <article class="question-card">
+        <button class="question-card__bookmark-button active" aria-label="bookmark">
           <svg viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -44,17 +46,18 @@
             />
           </svg>
         </button>
-        <p>Who is the 2022 F1 World-Champion?</p>
-        <button class="showAnswer">Show Answer</button>
+        <p class="question-card__question">Who is the 2022 F1 World-Champion?</p>
+        <button class="question-card__show-answer-button">Show Answer</button>
 
-        <ul class="categorieTags">
+        <ul class="question-card__categorie-tags">
           <li>#F1</li>
           <li>#Racing</li>
           <li>#Champion</li>
         </ul>
       </article>
-      <article class="card">
-        <button class="bookmark-button" aria-label="bookmark">
+      <!--third card-->
+      <article class="question-card">
+        <button class="question-card__bookmark-button aria-label="bookmark">
           <svg viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -62,17 +65,18 @@
             />
           </svg>
         </button>
-        <p>How many Teams started in the 2022 F1 Season?</p>
-        <button class="showAnswer">Show Answer</button>
+        <p class="question-card__question">How many Teams started in the 2022 F1 Season?</p>
+        <button class="question-card__show-answer-button">Show Answer</button>
 
-        <ul class="categorieTags">
+        <ul class="question-card__categorie-tags">
           <li>#F1</li>
           <li>#Racing</li>
           <li>#Teams</li>
         </ul>
       </article>
-      <article class="card">
-        <button class="bookmark-button active" aria-label="bookmark">
+      <!--fourth card-->
+      <article class="question-card">
+        <button class="question-card__bookmark-button active" aria-label="bookmark">
           <svg viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -80,17 +84,18 @@
             />
           </svg>
         </button>
-        <p>How many drivers started in the 2022 F1 Season?</p>
-        <button class="showAnswer">Show Answer</button>
+        <p class="question-card__question">How many drivers started in the 2022 F1 Season?</p>
+        <button class="question-card__show-answer-button">Show Answer</button>
 
-        <ul class="categorieTags">
+        <ul class="question-card__categorie-tags">
           <li>#F1</li>
           <li>#Racing</li>
           <li>#Drivers</li>
         </ul>
       </article>
-      <article class="card">
-        <button class="bookmark-button active" aria-label="bookmark">
+      <!--fifth card-->
+      <article class="question-card">
+        <button class="question-card__bookmark-button active" aria-label="bookmark">
           <svg viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -99,16 +104,17 @@
           </svg>
         </button>
         <p>Who won the Constructer Championship in the 2022 F1 Season?</p>
-        <button class="showAnswer">Show Answer</button>
+        <button class="question-card__show-answer-button">Show Answer</button>
 
-        <ul class="categorieTags">
+        <ul class="question-card__categorie-tags">
           <li>#F1</li>
           <li>#Racing</li>
           <li>#Constructer</li>
         </ul>
       </article>
-      <article class="card">
-        <button class="bookmark-button active" aria-label="bookmark">
+      <!--sixth card-->
+      <article class="question-card">
+        <button class="question-card__bookmark-button active" aria-label="bookmark">
           <svg viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -117,9 +123,9 @@
           </svg>
         </button>
         <p>How many titles did Sebastian Vettel win in his carreer?</p>
-        <button class="showAnswer">Show Answer</button>
+        <button class="question-card__show-answer-button">Show Answer</button>
 
-        <ul class="categorieTags">
+        <ul class="question-card__categorie-tags">
           <li>#F1</li>
           <li>#Racing</li>
           <li>#DankeSeb</li>
@@ -128,7 +134,7 @@
     </main>
     <footer>
       <nav class="navbar">
-        <a href="index.html" class="activeTab"
+        <a href="index.html" class="navbar_active-tab"
           ><img src="./assets/kindpng_822718.png" alt="link to questions"
         /></a>
         <a href="./bookmarks.html"
@@ -137,7 +143,7 @@
             alt="link to bookmarks"
         /></a>
         <a href="./profile.html"
-          ><img src="./assets/profile.png" / alt="link to ptofile"></a
+          ><img src="./assets/profile.png"  alt="link to ptofile"/></a
         >
       </nav>
     </footer>
