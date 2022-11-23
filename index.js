@@ -1,3 +1,4 @@
+//Bookmark buttons
 const button1 = document.querySelector('[data-js="btnCard1"]');
 button1.addEventListener("click", () => {
   button1.classList.toggle("active");
@@ -22,4 +23,10 @@ button5.addEventListener("click", () => {
 const button6 = document.querySelector('[data-js="btnCard6"]');
 button6.addEventListener("click", () => {
   button6.classList.toggle("active");
+});
+
+//Answer button
+const answerbtn1 = document.querySelector('[data-js="answerbtn1"]');
+answerbtn1.addEventListener("click", () => {
+  answerbtn1.innerHTML = "Sebastian Vettel";
 });
