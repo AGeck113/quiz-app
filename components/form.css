@@ -1,0 +1,22 @@
+.form {
+  height: fit-content;
+  width: auto;
+  max-width: 500px;
+  border: 2px solid black;
+  position: relative;
+  text-align: center;
+  background-color: var(--content-background);
+  border-radius: 5%;
+  padding: 24px;
+  margin: 20px auto;
+  box-shadow: 5px 5px black;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.character-left {
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: -0.5rem;
+  color: gray;
+}
