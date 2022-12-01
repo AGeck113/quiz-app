@@ -1,5 +1,5 @@
 footer {
-  height: 60px;
+  height: 4rem;
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -17,6 +17,12 @@ footer {
   border-radius: 30%;
 }
 .navbar img {
-  height: 50px;
+  height: 3rem;
+  width: 3rem;
   padding: 4px;
+}
+.navbar svg {
+  height: 50px;
+  width: 50px;
+  color: black;
 }

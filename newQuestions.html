@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="newQuestions.js" defer></script>
+  </head>
+  <body data-js="body">
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <form data-js="form" class="form">
+        <h2>Create your own questions!</h2>
+        <label for="newQuestion">Your Question:</label>
+        <input
+          type="textarea"
+          name="newQuestion"
+          id="new-question"
+          maxlength="150"
+          rows="5"
+          data-js="inputQuestion"
+          required
+        />
+        <small class="character-left" data-js="counterQuestion">
+          You have 150 Characters left!
+        </small>
+        <label for="newAnswer">Your Answer:</label>
+        <input
+          type="textarea"
+          name="newAnswer"
+          id="new-answer"
+          maxlength="150"
+          data-js="inputAnswer"
+          required
+        />
+        <small class="character-left" data-js="counterAnswer">
+          You have 150 Characters left!
+        </small>
+        <label for="yourTag">Tag:</label>
+        <input type="text" name="newTag" id="new-tag" maxlength="15" required />
+
+        <button type="submit" data-js="submitButton">Submit</button>
+      </form>
+      <section data-js="newCardArea"></section>
+    </main>
+    <footer>
+      <nav class="navbar">
+        <a href="index.html">
+          <img src="./assets/kindpng_822718.png" alt="link to questions"
+        /></a>
+        <a href="./bookmarks.html"
+          ><img
+            src="./assets/P54wi8dBuiTavN8-Bookmark-PNG-File.png"
+            alt="bookmarks"
+        /></a>
+        <a href="./newQuestions.html" class="navbar__active-tab"
+          ><svg viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22H9M11,6V9H8V11H11V14H13V11H16V9H13V6H11Z"
+            />
+          </svg>
+        </a>
+        <a href="./profile.html"
+          ><img src="./assets/profile.png" alt="link to profile"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
