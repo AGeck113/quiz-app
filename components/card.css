@@ -50,3 +50,6 @@
 .question-card__show-answer-button:hover {
   background-color: var(--tag-background);
 }
+.hidden {
+  display: none;
+}
