@@ -14,6 +14,11 @@ form.addEventListener("submit", (event) => {
   newCard.classList.add("question-card");
   newArea.append(newCard);
 
+  const newBookmarkButton = document.createElement("button");
+  newBookmarkButton.classList.add("question-card__bookmark-button");
+  newBookmarkButton.textContent = "Click"; // Button needs svg
+  newCard.append(newBookmarkButton);
+
   const newQuestion = document.createElement("p");
   newQuestion.textContent = "Question: " + data.newQuestion;
   newQuestion.classList.add("question-card__question");
@@ -31,8 +36,13 @@ form.addEventListener("submit", (event) => {
   const newTag = document.createElement("li");
   newTag.textContent = "#" + data.newTag;
   newTagList.append(newTag);
-});
 
+  event.target.reset();
+
+  counterQuestion.textContent = `You have 150 Characters left`;
+  counterAnswer.textContent = `You have 150 Characters left`;
+});
+//Counter for Characters left
 const counterQuestion = document.querySelector('[data-js="counterQuestion"]');
 const counterAnswer = document.querySelector('[data-js="counterAnswer"]');
 
