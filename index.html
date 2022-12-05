@@ -8,195 +8,320 @@
     <link rel="stylesheet" href="./styles.css" />
     <script src="index.js" defer></script>
   </head>
-  <body>
+  <body data-js="body">
     <header>
       <h1>Quiz App</h1>
     </header>
     <main>
-      <!-- first card -->
-      <article class="question-card">
-        <button
-          class="question-card__bookmark-button"
-          data-js="btnCard1"
-          aria-label="bookmark"
-        >
-          <svg viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-            />
-          </svg>
-        </button>
-        <p class="question-card__question">
-          What driver ended his F1 career in 2022?
-        </p>
-        <button class="question-card__show-answer-button" data-js="answerbtn1">
-          Show Answer
-        </button>
-        <p class="answer hidden" data-js="answer1">Sebastian Vettel</p>
-        <ul class="question-card__categorie-tags">
-          <li>#F1</li>
-          <li>#Racing</li>
-          <li>#DankeSeb</li>
-        </ul>
-      </article>
-      <!--second card-->
-      <article class="question-card">
-        <button
-          class="question-card__bookmark-button"
-          aria-label="bookmark"
-          data-js="btnCard2"
-        >
-          <svg viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-            />
-          </svg>
-        </button>
-        <p class="question-card__question">
-          Who is the 2022 F1 World-Champion?
-        </p>
-        <button class="question-card__show-answer-button" data-js="answerbtn2">
-          Show Answer
-        </button>
-        <p class="answer hidden" data-js="answer2">Max Verstappen</p>
+      <!-- Starting Page-->
+      <section class="page current" id="home" data-js="page-home">
+        <!-- first card -->
+        <article class="question-card">
+          <button
+            class="question-card__bookmark-button"
+            data-js="btnCard1"
+            aria-label="bookmark"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </button>
+          <p class="question-card__question">
+            What driver ended his F1 career in 2022?
+          </p>
+          <button
+            class="question-card__show-answer-button"
+            data-js="answerbtn1"
+          >
+            Show Answer
+          </button>
+          <p class="answer hidden" data-js="answer1">Sebastian Vettel</p>
+          <ul class="question-card__categorie-tags">
+            <li>#F1</li>
+            <li>#Racing</li>
+            <li>#DankeSeb</li>
+          </ul>
+        </article>
+        <!--second card-->
+        <article class="question-card">
+          <button
+            class="question-card__bookmark-button"
+            aria-label="bookmark"
+            data-js="btnCard2"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </button>
+          <p class="question-card__question">
+            Who is the 2022 F1 World-Champion?
+          </p>
+          <button
+            class="question-card__show-answer-button"
+            data-js="answerbtn2"
+          >
+            Show Answer
+          </button>
+          <p class="answer hidden" data-js="answer2">Max Verstappen</p>
 
-        <ul class="question-card__categorie-tags">
-          <li>#F1</li>
-          <li>#Racing</li>
-          <li>#Champion</li>
-        </ul>
-      </article>
-      <!--third card-->
-      <article class="question-card">
-        <button
-          class="question-card__bookmark-button"
-          data-js="btnCard3"
-          aria-label="bookmark"
-        >
-          <svg viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-            />
-          </svg>
-        </button>
-        <p class="question-card__question">
-          How many Teams started in the 2022 F1 Season?
-        </p>
-        <button class="question-card__show-answer-button" data-js="answerbtn3">
-          Show Answer
-        </button>
-        <p class="answer hidden" data-js="answer3">10 Teams</p>
+          <ul class="question-card__categorie-tags">
+            <li>#F1</li>
+            <li>#Racing</li>
+            <li>#Champion</li>
+          </ul>
+        </article>
+        <!--third card-->
+        <article class="question-card">
+          <button
+            class="question-card__bookmark-button"
+            data-js="btnCard3"
+            aria-label="bookmark"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </button>
+          <p class="question-card__question">
+            How many Teams started in the 2022 F1 Season?
+          </p>
+          <button
+            class="question-card__show-answer-button"
+            data-js="answerbtn3"
+          >
+            Show Answer
+          </button>
+          <p class="answer hidden" data-js="answer3">10 Teams</p>
 
-        <ul class="question-card__categorie-tags">
-          <li>#F1</li>
-          <li>#Racing</li>
-          <li>#Teams</li>
-        </ul>
-      </article>
-      <!--fourth card-->
-      <article class="question-card">
-        <button
-          class="question-card__bookmark-button"
-          data-js="btnCard4"
-          aria-label="bookmark"
-        >
-          <svg viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-            />
-          </svg>
-        </button>
-        <p class="question-card__question">
-          How many drivers started in the 2022 F1 Season?
-        </p>
-        <button class="question-card__show-answer-button" data-js="answerbtn4">
-          Show Answer
-        </button>
-        <p class="answer hidden" data-js="answer4">20 Drivers</p>
+          <ul class="question-card__categorie-tags">
+            <li>#F1</li>
+            <li>#Racing</li>
+            <li>#Teams</li>
+          </ul>
+        </article>
+        <!--fourth card-->
+        <article class="question-card">
+          <button
+            class="question-card__bookmark-button"
+            data-js="btnCard4"
+            aria-label="bookmark"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </button>
+          <p class="question-card__question">
+            How many drivers started in the 2022 F1 Season?
+          </p>
+          <button
+            class="question-card__show-answer-button"
+            data-js="answerbtn4"
+          >
+            Show Answer
+          </button>
+          <p class="answer hidden" data-js="answer4">20 Drivers</p>
 
-        <ul class="question-card__categorie-tags">
-          <li>#F1</li>
-          <li>#Racing</li>
-          <li>#Drivers</li>
-        </ul>
-      </article>
-      <!--fifth card-->
-      <article class="question-card">
-        <button
-          class="question-card__bookmark-button"
-          data-js="btnCard5"
-          aria-label="bookmark"
-        >
-          <svg viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-            />
-          </svg>
-        </button>
-        <p>Who won the Constructer Championship in the 2022 F1 Season?</p>
-        <button class="question-card__show-answer-button" data-js="answerbtn5">
-          Show Answer
-        </button>
-        <p class="answer hidden" data-js="answer5">Red Bull Racing</p>
+          <ul class="question-card__categorie-tags">
+            <li>#F1</li>
+            <li>#Racing</li>
+            <li>#Drivers</li>
+          </ul>
+        </article>
+        <!--fifth card-->
+        <article class="question-card">
+          <button
+            class="question-card__bookmark-button"
+            data-js="btnCard5"
+            aria-label="bookmark"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </button>
+          <p>Who won the Constructer Championship in the 2022 F1 Season?</p>
+          <button
+            class="question-card__show-answer-button"
+            data-js="answerbtn5"
+          >
+            Show Answer
+          </button>
+          <p class="answer hidden" data-js="answer5">Red Bull Racing</p>
 
-        <ul class="question-card__categorie-tags">
-          <li>#F1</li>
-          <li>#Racing</li>
-          <li>#Constructer</li>
-        </ul>
-      </article>
-      <!--sixth card-->
-      <article class="question-card">
-        <button
-          class="question-card__bookmark-button"
-          data-js="btnCard6"
-          aria-label="bookmark"
-        >
-          <svg viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-            />
-          </svg>
-        </button>
-        <p>How many titles did Sebastian Vettel win in his carreer?</p>
-        <button class="question-card__show-answer-button" data-js="answerbtn6">
-          Show Answer
-        </button>
-        <p class="answer hidden" data-js="answer6">He has won 3 titles</p>
-        <ul class="question-card__categorie-tags">
-          <li>#F1</li>
-          <li>#Racing</li>
-          <li>#DankeSeb</li>
-        </ul>
-      </article>
+          <ul class="question-card__categorie-tags">
+            <li>#F1</li>
+            <li>#Racing</li>
+            <li>#Constructer</li>
+          </ul>
+        </article>
+        <!--sixth card-->
+        <article class="question-card">
+          <button
+            class="question-card__bookmark-button"
+            data-js="btnCard6"
+            aria-label="bookmark"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </button>
+          <p>How many titles did Sebastian Vettel win in his carreer?</p>
+          <button
+            class="question-card__show-answer-button"
+            data-js="answerbtn6"
+          >
+            Show Answer
+          </button>
+          <p class="answer hidden" data-js="answer6">He has won 3 titles</p>
+          <ul class="question-card__categorie-tags">
+            <li>#F1</li>
+            <li>#Racing</li>
+            <li>#DankeSeb</li>
+          </ul>
+        </article>
+      </section>
+      <!-- End of Home page-->
+      <section class="page" id="bookmark" data-js="page-bookmark">
+        <!--first card-->
+        <article class="question-card">
+          <button
+            class="question-card__bookmark-button active"
+            aria-label="bookmark"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </button>
+          <p class="question-card__question">
+            What driver ended his F1 career in 2022?
+          </p>
+          <button class="question-card__show-answer-button">Show Answer</button>
+
+          <ul class="question-card__categorie-tags">
+            <li>#F1</li>
+            <li>#Racing</li>
+            <li>#DankeSeb</li>
+          </ul>
+        </article>
+        <!--second card-->
+        <article class="question-card">
+          <button
+            class="question-card__bookmark-button active"
+            aria-label="bookmark"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </button>
+          <p class="question-card__question">
+            Who is the 2022 F1 World-Champion?
+          </p>
+          <button class="question-card__show-answer-button">Show Answer</button>
+
+          <ul class="question-card__categorie-tags">
+            <li>#F1</li>
+            <li>#Racing</li>
+            <li>#Champion</li>
+          </ul>
+        </article>
+      </section>
+      <!-- End of bookmarked-->
+      <!-- Start of newQuestions-->
+      <section class="page" id="newQuestions" data-js="page-newQuestions">
+        <form data-js="form" class="form">
+          <h2>Create your own questions!</h2>
+          <label for="newQuestion">Your Question:</label>
+          <input
+            type="textarea"
+            name="newQuestion"
+            id="new-question"
+            maxlength="150"
+            rows="5"
+            data-js="inputQuestion"
+            required
+          />
+          <small class="character-left" data-js="counterQuestion">
+            You have 150 Characters left!
+          </small>
+          <label for="newAnswer">Your Answer:</label>
+          <input
+            type="textarea"
+            name="newAnswer"
+            id="new-answer"
+            maxlength="150"
+            data-js="inputAnswer"
+            required
+          />
+          <small class="character-left" data-js="counterAnswer">
+            You have 150 Characters left!
+          </small>
+          <label for="yourTag">Tag:</label>
+          <input
+            type="text"
+            name="newTag"
+            id="new-tag"
+            maxlength="15"
+            required
+          />
+
+          <button type="submit" data-js="submitButton">Submit</button>
+        </form>
+        <section data-js="newCardArea"></section>
+      </section>
+      <!--End of newQuestions-->
+      <!--Start of Profile Page-->
+      <section class="page" id="profile" data-js="page-profile">
+        <section class="profile">
+          <img
+            src="./assets/profile-picture.webp"
+            alt="profile-picture"
+            class="profile_profile-picture"
+          />
+          <p class="profile_profile-name">Sebastian Vettel</p>
+          <p class="profile_about-me">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+          </p>
+          <p class="profile_counter-asked">To Do Counter Asked</p>
+          <p class="profile_bookmarked">To Do Counter Bookmarked</p>
+          <a href="./settings.html" class="profile_settings">Settings</a>
+          <button data-js="toggleDarkMode" class="profile_dark-mode">
+            Dark Mode
+          </button>
+        </section>
+      </section>
     </main>
     <footer>
       <nav class="navbar">
-        <a href="index.html" class="navbar__active-tab"
-          ><img src="./assets/kindpng_822718.png" alt="link to questions"
-        /></a>
-        <a href="./bookmarks.html"
-          ><img
-            src="./assets/P54wi8dBuiTavN8-Bookmark-PNG-File.png"
-            alt="link to bookmarks"
-        /></a>
-        <a href="./newQuestions.html"
-          ><svg viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22H9M11,6V9H8V11H11V14H13V11H16V9H13V6H11Z"
-            />
-          </svg>
-        </a>
-        <a href="./profile.html"
-          ><img src="./assets/profile.png" alt="link to profile"
-        /></a>
+        <a href="#home" class="navbar__active-tab" data-js="link-home">home</a>
+        <a href="#bookmark" data-js="link-bookmark">bookmarked</a>
+        <a href="#newQuestions" data-js="link-newQuestions">new Questions </a>
+        <a href="#profile" data-js="link-profile">Profile</a>
       </nav>
     </footer>
   </body>
