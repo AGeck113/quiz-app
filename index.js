@@ -115,9 +115,13 @@ allLinks.forEach((link) => {
     allPages.forEach((page) => {
       page.classList.remove("current");
     });
+    allLinks.forEach((link) => {
+      link.classList.remove("active-tab");
+      console.log(event.target);
+      event.target.classList.add("active-tab");
+    });
     const hrefAttribute = event.target.getAttribute("href");
     const currentPage = document.querySelector(hrefAttribute);
-    console.log(event.target);
     currentPage.classList.add("current");
   });
 });
