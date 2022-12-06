@@ -106,7 +106,7 @@ answerbtn6.addEventListener("click", () => {
     answer6.classList.add("hidden");
   }
 });
-
+// Onepager
 const allPages = document.querySelectorAll('[data-js*="page"]');
 const allLinks = document.querySelectorAll('[data-js*="link"]');
 
