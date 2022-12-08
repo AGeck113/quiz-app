@@ -1,20 +1,17 @@
-export function createCard(card) {
-  const homepage = document.querySelector('[data-js="page-home"]');
+export function createBookmarkedCard(card) {
+  const bookmarkedPage = document.querySelector('[data-js="page-bookmark"]');
   const newCard = document.createElement("article");
   newCard.classList.add("question-card");
-  homepage.append(newCard);
+  bookmarkedPage.append(newCard);
 
   const newBookmarkButton = document.createElement("button");
   newBookmarkButton.innerHTML = `<svg viewBox="0 0 24 24">
-  <path
-    fill="currentColor"
-    d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-  />
-</svg>`;
-  newBookmarkButton.classList.add("question-card__bookmark-button");
-  if (card.bookmarked === true) {
-    newBookmarkButton.classList.add("active");
-  }
+    <path
+      fill="currentColor"
+      d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+    />
+  </svg>`;
+  newBookmarkButton.classList.add("question-card__bookmark-button", "active");
   newBookmarkButton.addEventListener("click", () => {
     if (card.bookmarked === false) {
       newBookmarkButton.classList.add("active");

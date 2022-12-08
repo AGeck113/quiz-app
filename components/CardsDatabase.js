@@ -3,7 +3,7 @@ export const questions = [
     question: "Which driver ended his F11 Career in 2022",
     answer: "Sebastian Vettel",
     tags: ["#F1", "DankeSeb", "#Racing"],
-    bookmarked: false,
+    bookmarked: true,
   },
   {
     question: "Who is the 2022 F1 World Champion?",
@@ -15,7 +15,7 @@ export const questions = [
     question: "How many teams started in the 2022 F1 Season?",
     answer: "10 Teams",
     tags: ["#F1", "#Motorsport", "#Racing"],
-    bookmarked: false,
+    bookmarked: true,
   },
   {
     question: "How many drivers started in the 2022 F1 Season?",
