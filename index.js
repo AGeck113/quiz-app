@@ -1,5 +1,6 @@
 import { questions } from "./components/CardsDatabase.js";
 import { createCard } from "./components/CreateCards.js";
+import { createBookmarkedCard } from "./components/CreateBookmarkedCards.js";
 
 questions.forEach((question) => {
   createCard(question);
@@ -9,11 +10,24 @@ questions.forEach((question) => {
 const allPages = document.querySelectorAll('[data-js*="page"]');
 const allLinks = document.querySelectorAll('[data-js*="link"]');
 
+const bookmarkLink = document.querySelector('[data-js="link-bookmark"]');
+const bookmarkedPage = document.querySelector('[data-js="page-bookmark"]');
+
+bookmarkLink.addEventListener("click", () => {
+  bookmarkedPage.innerHTML = "";
+  questions.forEach((question) => {
+    if (question.bookmarked === true) {
+      createBookmarkedCard(question);
+    }
+  });
+});
+
 allLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     allPages.forEach((page) => {
       page.classList.remove("current");
     });
+
     allLinks.forEach((link) => {
       link.classList.remove("active-tab");
       event.target.classList.add("active-tab");
