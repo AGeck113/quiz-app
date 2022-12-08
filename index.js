@@ -5,6 +5,7 @@ import { createBookmarkedCard } from "./components/CreateBookmarkedCards.js";
 import { onepager } from "./components/Onepager.js";
 import { Form } from "./components/Form.js";
 import { darkmode } from "./components/Darkmode.js";
+import { Count } from "./components/CounterBookmarked.js";
 
 questions.forEach((question) => {
   createCard(question);
@@ -29,3 +30,4 @@ console.clear();
 //Form + Submit
 Form();
 darkmode();
+Count();
