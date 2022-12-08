@@ -1,6 +1,8 @@
+import { questions } from "./CardsDatabase.js";
+import { createCard } from "./CreateCards.js";
+
 export function Form() {
   const form = document.querySelector('[data-js="form"]');
-  // const submitButton = document.querySelector('[data-js="submitButton"]');
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -14,7 +16,12 @@ export function Form() {
 
     const newBookmarkButton = document.createElement("button");
     newBookmarkButton.classList.add("question-card__bookmark-button");
-    newBookmarkButton.textContent = "Click"; // Button needs svg
+    newBookmarkButton.innerHTML = `<svg viewBox="0 0 24 24">
+    <path
+      fill="currentColor"
+      d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+    />
+  </svg>`;
     newCard.append(newBookmarkButton);
 
     const newQuestion = document.createElement("p");
@@ -34,6 +41,16 @@ export function Form() {
     const newTag = document.createElement("li");
     newTag.textContent = "#" + data.newTag;
     newTagList.append(newTag);
+    //Append newCard to Homepage
+
+    const newEntry = {
+      question: data.newQuestion,
+      answer: data.newAnswer,
+      tags: data.newTag.split(","),
+      bookmarked: false,
+    };
+    questions.push(newEntry);
+    createCard(newEntry);
 
     event.target.reset();
 
