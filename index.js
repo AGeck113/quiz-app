@@ -24,9 +24,9 @@ bookmarkLink.addEventListener("click", () => {
 
 //newQuestions
 console.clear();
-
+//Form + Submit
 const form = document.querySelector('[data-js="form"]');
-const submitButton = document.querySelector('[data-js="submitButton"]');
+// const submitButton = document.querySelector('[data-js="submitButton"]');
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
