@@ -4,6 +4,8 @@ import { createCard } from "./components/CreateCards.js";
 import { createBookmarkedCard } from "./components/CreateBookmarkedCards.js";
 import { onepager } from "./components/Onepager.js";
 import { Form } from "./components/Form.js";
+import { darkmode } from "./components/Darkmode.js";
+
 questions.forEach((question) => {
   createCard(question);
 });
@@ -26,9 +28,4 @@ bookmarkLink.addEventListener("click", () => {
 console.clear();
 //Form + Submit
 Form();
-const bodyElement = document.querySelector('[data-js="body"]');
-
-const toggleButton = document.querySelector('[data-js="toggleDarkMode"');
-toggleButton.addEventListener("click", () => {
-  bodyElement.classList.toggle("dark");
-});
+darkmode();
