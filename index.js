@@ -117,7 +117,6 @@ allLinks.forEach((link) => {
     });
     allLinks.forEach((link) => {
       link.classList.remove("active-tab");
-      console.log(event.target);
       event.target.classList.add("active-tab");
     });
     const hrefAttribute = event.target.getAttribute("href");
@@ -136,7 +135,6 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  console.log(data);
 
   const newArea = document.querySelector('[data-js="newCardArea"]');
   const newCard = document.createElement("article");
@@ -193,7 +191,6 @@ inputAnswer.addEventListener("input", () => {
 });
 
 const bodyElement = document.querySelector('[data-js="body"]');
-console.log(bodyElement);
 
 const toggleButton = document.querySelector('[data-js="toggleDarkMode"');
 toggleButton.addEventListener("click", () => {
