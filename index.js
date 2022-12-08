@@ -115,9 +115,12 @@ allLinks.forEach((link) => {
     allPages.forEach((page) => {
       page.classList.remove("current");
     });
+    allLinks.forEach((link) => {
+      link.classList.remove("active-tab");
+      event.target.classList.add("active-tab");
+    });
     const hrefAttribute = event.target.getAttribute("href");
     const currentPage = document.querySelector(hrefAttribute);
-    console.log(event.target);
     currentPage.classList.add("current");
   });
 });
@@ -132,7 +135,6 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  console.log(data);
 
   const newArea = document.querySelector('[data-js="newCardArea"]');
   const newCard = document.createElement("article");
@@ -189,7 +191,6 @@ inputAnswer.addEventListener("input", () => {
 });
 
 const bodyElement = document.querySelector('[data-js="body"]');
-console.log(bodyElement);
 
 const toggleButton = document.querySelector('[data-js="toggleDarkMode"');
 toggleButton.addEventListener("click", () => {
