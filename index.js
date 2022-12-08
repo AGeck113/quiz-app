@@ -2,31 +2,13 @@ console.clear();
 import { questions } from "./components/CardsDatabase.js";
 import { createCard } from "./components/CreateCards.js";
 import { createBookmarkedCard } from "./components/CreateBookmarkedCards.js";
-
+import { onepager } from "./components/Onepager.js";
 questions.forEach((question) => {
   createCard(question);
 });
 
 // Onepager
-const allPages = document.querySelectorAll('[data-js*="page"]');
-const allLinks = document.querySelectorAll('[data-js*="link"]');
-
-allLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    allPages.forEach((page) => {
-      page.classList.remove("current");
-    });
-
-    allLinks.forEach((link) => {
-      link.classList.remove("active-tab");
-      event.target.classList.add("active-tab");
-    });
-    const hrefAttribute = event.target.getAttribute("href");
-    const currentPage = document.querySelector(hrefAttribute);
-    currentPage.classList.add("current");
-  });
-});
-
+onepager();
 //Bookmark functionality
 const bookmarkLink = document.querySelector('[data-js="link-bookmark"]');
 const bookmarkedPage = document.querySelector('[data-js="page-bookmark"]');
