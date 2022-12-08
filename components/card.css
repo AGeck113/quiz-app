@@ -1,7 +1,6 @@
 .question-card {
   height: fit-content;
   width: auto;
-  max-width: 500px;
   border: 2px solid black;
   position: relative;
   text-align: center;

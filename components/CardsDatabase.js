@@ -1,3 +1,5 @@
+console.clear();
+
 export const questions = [
   {
     question: "Which driver ended his F11 Career in 2022",
