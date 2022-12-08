@@ -1,3 +1,5 @@
+console.clear();
+
 export function createBookmarkedCard(card) {
   const bookmarkedPage = document.querySelector('[data-js="page-bookmark"]');
   const newCard = document.createElement("article");
@@ -54,7 +56,6 @@ export function createBookmarkedCard(card) {
   newCard.append(tagList);
 
   card.tags.forEach((tag) => {
-    console.log(tag);
     const newTag = document.createElement("li");
     newTag.textContent = tag;
     tagList.append(newTag);

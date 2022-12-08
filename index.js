@@ -1,3 +1,4 @@
+console.clear();
 import { questions } from "./components/CardsDatabase.js";
 import { createCard } from "./components/CreateCards.js";
 import { createBookmarkedCard } from "./components/CreateBookmarkedCards.js";

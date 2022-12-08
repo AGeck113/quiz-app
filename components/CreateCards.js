@@ -1,3 +1,4 @@
+console.clear();
 export function createCard(card) {
   const homepage = document.querySelector('[data-js="page-home"]');
   const newCard = document.createElement("article");
