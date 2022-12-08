@@ -1,4 +1,4 @@
-export async function createCard(card) {
+export function createCard(card) {
   const homepage = document.querySelector('[data-js="page-home"]');
   const newCard = document.createElement("article");
   newCard.classList.add("question-card");
@@ -13,7 +13,14 @@ export async function createCard(card) {
 </svg>`;
   newBookmarkButton.classList.add("question-card__bookmark-button");
   newBookmarkButton.addEventListener("click", () => {
-    newBookmarkButton.classList.toggle("active");
+    if (card.bookmarked === false) {
+      newBookmarkButton.classList.add("active");
+      card.bookmarked = true;
+    } else if (card.bookmarked === true) {
+      newBookmarkButton.classList.remove("active");
+      card.bookmarked = false;
+    }
+    // newBookmarkButton.classList.toggle("active");
   });
   newCard.append(newBookmarkButton);
 
