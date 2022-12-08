@@ -11,18 +11,6 @@ questions.forEach((question) => {
 const allPages = document.querySelectorAll('[data-js*="page"]');
 const allLinks = document.querySelectorAll('[data-js*="link"]');
 
-const bookmarkLink = document.querySelector('[data-js="link-bookmark"]');
-const bookmarkedPage = document.querySelector('[data-js="page-bookmark"]');
-
-bookmarkLink.addEventListener("click", () => {
-  bookmarkedPage.innerHTML = "";
-  questions.forEach((question) => {
-    if (question.bookmarked === true) {
-      createBookmarkedCard(question);
-    }
-  });
-});
-
 allLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     allPages.forEach((page) => {
@@ -36,6 +24,19 @@ allLinks.forEach((link) => {
     const hrefAttribute = event.target.getAttribute("href");
     const currentPage = document.querySelector(hrefAttribute);
     currentPage.classList.add("current");
+  });
+});
+
+//Bookmark functionality
+const bookmarkLink = document.querySelector('[data-js="link-bookmark"]');
+const bookmarkedPage = document.querySelector('[data-js="page-bookmark"]');
+
+bookmarkLink.addEventListener("click", () => {
+  bookmarkedPage.innerHTML = "";
+  questions.forEach((question) => {
+    if (question.bookmarked === true) {
+      createBookmarkedCard(question);
+    }
   });
 });
 
